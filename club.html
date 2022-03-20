@@ -31,13 +31,32 @@ a:hover {
 </head>
 <body> <body text=white>
  
- <p class="aligncenter"><img src="https://github.com/backdoorclub/home/blob/main/Untitled%20presentation%20(1).jpg?raw=true" alt="the Logo" /></p>
- <h1 class="aligncenter"><strong>Welcome to the Backdoor Club.</strong></h1>
- <h3 class="aligncenter"><a href="/club.html"><strong>Enter.</strong></a></h3>
- <br>
- <h6 class="aligncenter">Backdoor Club © 2022</h6>
- <h6 class="aligncenter"><a href="https://docs.google.com/document/d/1ksSbxThmnKLC1QLoWWrtgcfYT1MKlywhyfws6XYPe5g/edit?usp=sharing">Terms of Service</a></h6>
-
+  <script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "flyingfox") {
+alert('Access Granted: Welcome to the Backdoor Club.');
+window.open('protectpage.html');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied: Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</script>
+<center>
+<form>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</form>
+</center>
  
 </body>
 
