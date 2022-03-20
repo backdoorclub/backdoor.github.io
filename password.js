@@ -24,8 +24,3 @@ return " ";
 <input type="button" value="Enter Protected Area" onClick="passWord()">
 </FORM>
 </CENTER>
-
-<!DOCTYPE html>
-<html>
-  <h1>Currently under development.</h1>
-</html>
